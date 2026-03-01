@@ -1,0 +1,26 @@
+2026-02-12 20:31:46,580 | INFO | ETL | Pipeline started | Found 2 files
+2026-02-12 20:31:46,580 | INFO | ETL | START processing file: customers.csv
+2026-02-12 20:31:46,580 | INFO | ETL | Starting validation for file: customers.csv
+2026-02-12 20:31:46,580 | INFO | ETL | Loading validation schema: validation/customers.yaml
+2026-02-12 20:31:46,628 | INFO | ETL | Schema validation completed | Valid rows: 100 | Quarantined rows: 0
+2026-02-12 20:31:46,666 | INFO | ETL | Validation successful for file: customers.csv
+2026-02-12 20:31:46,667 | INFO | ETL | Starting load \u2192 customers.csv \u2192 table: customers
+2026-02-12 20:31:46,667 | INFO | ETL | Loading schema for DB load: validation/customers.yaml
+2026-02-12 20:31:46,904 | INFO | ETL | Ensuring table exists: customers
+2026-02-12 20:31:47,096 | INFO | ETL | SCD2 upsert started for table: customers
+2026-02-12 20:31:47,218 | INFO | ETL | SCD2 SUMMARY : customers | INSERT: 0 | UPDATE: 1 | SKIP: 99
+2026-02-12 20:31:47,220 | INFO | ETL | Load successful for file: customers.csv
+2026-02-12 20:31:47,269 | INFO | ETL | SUCCESS customers.csv
+2026-02-12 20:31:47,270 | INFO | ETL | START processing file: products.csv
+2026-02-12 20:31:47,270 | INFO | ETL | Starting validation for file: products.csv
+2026-02-12 20:31:47,282 | INFO | ETL | Loading validation schema: validation/products.yaml
+2026-02-12 20:31:47,315 | INFO | ETL | Schema validation completed | Valid rows: 1080 | Quarantined rows: 0
+2026-02-12 20:31:47,389 | INFO | ETL | Validation successful for file: products.csv
+2026-02-12 20:31:47,390 | INFO | ETL | Starting load \u2192 products.csv \u2192 table: products
+2026-02-12 20:31:47,390 | INFO | ETL | Loading schema for DB load: validation/products.yaml
+2026-02-12 20:31:47,456 | INFO | ETL | Ensuring table exists: products
+2026-02-12 20:31:47,644 | INFO | ETL | SCD2 upsert started for table: products
+2026-02-12 20:31:48,387 | INFO | ETL | SCD2 SUMMARY : products | INSERT: 0 | UPDATE: 1 | SKIP: 1079
+2026-02-12 20:31:48,387 | INFO | ETL | Load successful for file: products.csv
+2026-02-12 20:31:48,428 | INFO | ETL | SUCCESS products.csv
+2026-02-12 20:31:48,428 | INFO | ETL | PIPELINE SUMMARY | Total: 2 | Processed: 2 | Rejected: 0 | Failed: 0

@@ -1,0 +1,16 @@
+2026-02-12 13:15:25,362 | INFO | ETL | Pipeline started | Found 1 files
+2026-02-12 13:15:25,362 | INFO | ETL | START processing file: customers.csv
+2026-02-12 13:15:25,362 | INFO | ETL | Starting validation for file: customers.csv
+2026-02-12 13:15:25,362 | INFO | ETL | Loading validation schema: validation/customers.yaml
+2026-02-12 13:15:25,420 | INFO | ETL | Schema validation completed | Valid rows: 100 | Quarantined rows: 0
+2026-02-12 13:15:25,435 | WARNING | ETL | customers.csv | Business rule failed: retired_age_check | Rows: 15
+2026-02-12 13:15:25,451 | WARNING | ETL | customers.csv validated with 15 invalid rows (quarantined)
+2026-02-12 13:15:25,451 | INFO | ETL | Validation successful for file: customers.csv
+2026-02-12 13:15:25,454 | WARNING | ETL | customers.csv | Quarantined rows written: 15
+2026-02-12 13:15:25,455 | INFO | ETL | Starting load \u2192 customers.csv \u2192 table: customers
+2026-02-12 13:15:25,455 | INFO | ETL | Loading schema for DB load: validation/customers.yaml
+2026-02-12 13:15:25,550 | INFO | ETL | Ensuring table exists: customers
+2026-02-12 13:15:25,596 | INFO | ETL | SCD2 upsert started for table: customers
+2026-02-12 13:15:25,657 | INFO | ETL | Load successful for file: customers.csv
+2026-02-12 13:15:25,690 | INFO | ETL | SUCCESS customers.csv
+2026-02-12 13:15:25,690 | INFO | ETL | PIPELINE SUMMARY | Total: 1 | Processed: 1 | Rejected: 0 | Failed: 0

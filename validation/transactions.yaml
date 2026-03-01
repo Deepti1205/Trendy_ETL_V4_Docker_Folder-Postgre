@@ -1,0 +1,87 @@
+table_name: transactions
+table_type: transactional
+
+business_key:
+    - TransactionID
+
+file_rules:
+  reject_if_missing_columns: true
+  reject_if_invalid_rows_percent_gt: 20
+
+columns:
+    TransactionID:
+        type: string
+        required: true
+        unique: true
+        regex: "^TXN-20[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])-[0-9]{5}$"
+        max_length: 50
+    
+    Timestamp:
+        type: timestamp
+        required: true
+        unique: true
+        not_in_future: true
+        max_past_days: 365
+        
+    CustomerID:
+        type: string
+        required: true
+        max_length: 50
+        
+    SKU:
+        type: string
+        required: true
+        max_length: 50
+        
+    Unit_Price:
+        type: float
+        required: true
+        min: 1
+        
+    Discount:
+        type: float
+        required: false
+        min: 0
+        
+    Quantity:
+        type: int
+        required: true
+        min: 1
+        max: 100
+        
+    Item_Cost:
+        type: float
+        required: true
+
+
+referential_integrity:
+  CustomerID:
+    reference_table: customers
+    reference_column: Customer_ID
+    action: reject_row
+
+  SKU:
+    reference_table: products
+    reference_column: SKU
+    action: reject_row
+    
+business_rules:
+  - name: item_cost_calculation
+    description: "Item_Cost must equal ((Unit_Price - ((Unit_Price * Discount) / 100)) * Quantity)"
+    condition: "abs(Item_Cost - ((Unit_Price - ((Unit_Price * Discount) / 100)) * Quantity)) > 0.01"
+    action: reject_row
+
+  - name: negative_transaction_value
+    description: "Transaction amount must be positive"
+    condition: "(Unit_Price - ((Unit_Price * Discount) / 100)) <= 0"
+    action: reject_row
+    
+  - name: future_transaction
+    description: "Transactions cannot occur in the future"
+    condition: "Timestamp > now"
+    action: reject_row
+
+  - name: stale_transaction
+    description: "Transactions older than 1 year are not accepted"
+    condition: "Timestamp < now - timedelta(days=1825)"
+    action: reject_row

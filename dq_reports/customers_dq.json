@@ -1,0 +1,7 @@
+{
+    "file": "customers.csv",
+    "total_rows": 101,
+    "valid_rows": 101,
+    "invalid_rows": 0,
+    "dq_score": 100.0
+}

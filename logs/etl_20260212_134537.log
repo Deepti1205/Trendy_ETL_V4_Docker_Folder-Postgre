@@ -1,0 +1,102 @@
+2026-02-12 13:45:37,978 | INFO | ETL | Pipeline started | Found 1 files
+2026-02-12 13:45:37,978 | INFO | ETL | START processing file: customers.csv
+2026-02-12 13:45:37,979 | INFO | ETL | Starting validation for file: customers.csv
+2026-02-12 13:45:37,984 | INFO | ETL | Loading validation schema: validation/customers.yaml
+2026-02-12 13:45:38,026 | INFO | ETL | Schema validation completed | Valid rows: 100 | Quarantined rows: 0
+2026-02-12 13:45:38,039 | WARNING | ETL | customers.csv | Business rule failed: retired_age_check | Rows: 15
+2026-02-12 13:45:38,050 | WARNING | ETL | customers.csv validated with 15 invalid rows (quarantined)
+2026-02-12 13:45:38,050 | INFO | ETL | Validation successful for file: customers.csv
+2026-02-12 13:45:38,050 | WARNING | ETL | customers.csv | Quarantined rows written: 15
+2026-02-12 13:45:38,050 | INFO | ETL | Starting load \u2192 customers.csv \u2192 table: customers
+2026-02-12 13:45:38,050 | INFO | ETL | Loading schema for DB load: validation/customers.yaml
+2026-02-12 13:45:38,158 | INFO | ETL | Ensuring table exists: customers
+2026-02-12 13:45:38,334 | INFO | ETL | SCD2 upsert started for table: customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,346 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,362 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,363 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,363 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,364 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,365 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,365 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,366 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,367 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,367 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,368 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,369 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,369 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,370 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,371 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,371 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,372 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,373 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,374 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,374 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,375 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,375 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,375 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,376 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,378 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers
+2026-02-12 13:45:38,393 | INFO | ETL | SCD2 SUMMARY \u2192 customers | INSERT: 0 | UPDATE: 0 | SKIP: 85
+2026-02-12 13:45:38,393 | INFO | ETL | Load successful for file: customers.csv
+2026-02-12 13:45:38,585 | INFO | ETL | SUCCESS customers.csv
+2026-02-12 13:45:38,586 | INFO | ETL | PIPELINE SUMMARY | Total: 1 | Processed: 1 | Rejected: 0 | Failed: 0

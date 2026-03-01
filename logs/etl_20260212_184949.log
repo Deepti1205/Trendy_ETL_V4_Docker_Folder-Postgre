@@ -1,0 +1,46 @@
+2026-02-12 18:49:49,440 | INFO | ETL | Pipeline started | Found 3 files
+2026-02-12 18:49:49,440 | INFO | ETL | START processing file: customers.csv
+2026-02-12 18:49:49,440 | INFO | ETL | Starting validation for file: customers.csv
+2026-02-12 18:49:49,440 | INFO | ETL | Loading validation schema: validation/customers.yaml
+2026-02-12 18:49:49,487 | INFO | ETL | Schema validation completed | Valid rows: 100 | Quarantined rows: 0
+2026-02-12 18:49:49,510 | WARNING | ETL | customers.csv | Business rule failed: retired_age_check | Rows: 15
+2026-02-12 18:49:49,551 | WARNING | ETL | customers.csv validated with 15 invalid rows (quarantined)
+2026-02-12 18:49:49,552 | INFO | ETL | Validation successful for file: customers.csv
+2026-02-12 18:49:49,555 | WARNING | ETL | customers.csv | Quarantined rows written: 15
+2026-02-12 18:49:49,555 | INFO | ETL | Starting load \u2192 customers.csv \u2192 table: customers
+2026-02-12 18:49:49,555 | INFO | ETL | Loading schema for DB load: validation/customers.yaml
+2026-02-12 18:49:49,643 | INFO | ETL | Ensuring table exists: customers
+2026-02-12 18:49:49,846 | INFO | ETL | SCD2 upsert started for table: customers
+2026-02-12 18:49:50,642 | INFO | ETL | SCD2 SUMMARY : customers | INSERT: 85 | UPDATE: 0 | SKIP: 0
+2026-02-12 18:49:50,642 | INFO | ETL | Load successful for file: customers.csv
+2026-02-12 18:49:50,811 | INFO | ETL | SUCCESS customers.csv
+2026-02-12 18:49:50,811 | INFO | ETL | START processing file: products.csv
+2026-02-12 18:49:50,813 | INFO | ETL | Starting validation for file: products.csv
+2026-02-12 18:49:50,830 | INFO | ETL | Loading validation schema: validation/products.yaml
+2026-02-12 18:49:50,909 | INFO | ETL | Schema validation completed | Valid rows: 460 | Quarantined rows: 620
+2026-02-12 18:49:50,956 | WARNING | ETL | products.csv validated with 620 invalid rows (quarantined)
+2026-02-12 18:49:50,956 | INFO | ETL | Validation successful for file: products.csv
+2026-02-12 18:49:50,972 | WARNING | ETL | products.csv | Quarantined rows written: 620
+2026-02-12 18:49:50,972 | INFO | ETL | Starting load \u2192 products.csv \u2192 table: products
+2026-02-12 18:49:50,972 | INFO | ETL | Loading schema for DB load: validation/products.yaml
+2026-02-12 18:49:51,156 | INFO | ETL | Ensuring table exists: products
+2026-02-12 18:49:52,128 | INFO | ETL | SCD2 upsert started for table: products
+2026-02-12 18:49:55,721 | INFO | ETL | SCD2 SUMMARY : products | INSERT: 460 | UPDATE: 0 | SKIP: 0
+2026-02-12 18:49:55,721 | INFO | ETL | Load successful for file: products.csv
+2026-02-12 18:49:55,753 | INFO | ETL | SUCCESS products.csv
+2026-02-12 18:49:55,753 | INFO | ETL | START processing file: transactions.csv
+2026-02-12 18:49:55,768 | INFO | ETL | Starting validation for file: transactions.csv
+2026-02-12 18:49:55,768 | INFO | ETL | Loading validation schema: validation/transactions.yaml
+2026-02-12 18:49:55,800 | INFO | ETL | Schema validation completed | Valid rows: 100 | Quarantined rows: 0
+2026-02-12 18:49:55,831 | WARNING | ETL | transactions.csv | Business rule failed: stale_transaction | Rows: 66
+2026-02-12 18:49:55,847 | WARNING | ETL | transactions.csv validated with 66 invalid rows (quarantined)
+2026-02-12 18:49:55,847 | INFO | ETL | Validation successful for file: transactions.csv
+2026-02-12 18:49:55,908 | WARNING | ETL | Referential integrity failed | Invalid CustomerID: 4 | Invalid SKU: 24
+2026-02-12 18:49:55,908 | WARNING | ETL | transactions.csv | Quarantined rows written: 91
+2026-02-12 18:49:55,908 | INFO | ETL | Starting load \u2192 transactions.csv \u2192 table: transactions
+2026-02-12 18:49:55,908 | INFO | ETL | Loading schema for DB load: validation/transactions.yaml
+2026-02-12 18:49:55,955 | INFO | ETL | Ensuring table exists: transactions
+2026-02-12 18:49:56,139 | INFO | ETL | Inserting 9 rows into transactions
+2026-02-12 18:49:56,174 | INFO | ETL | Load successful for file: transactions.csv
+2026-02-12 18:49:56,320 | INFO | ETL | SUCCESS transactions.csv
+2026-02-12 18:49:56,320 | INFO | ETL | PIPELINE SUMMARY | Total: 3 | Processed: 3 | Rejected: 0 | Failed: 0

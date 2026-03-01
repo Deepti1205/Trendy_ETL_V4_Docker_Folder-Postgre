@@ -1,0 +1,75 @@
+2026-02-12 18:28:54,800 | INFO | ETL | Pipeline started | Found 3 files
+2026-02-12 18:28:54,800 | INFO | ETL | START processing file: customers.csv
+2026-02-12 18:28:54,800 | INFO | ETL | Starting validation for file: customers.csv
+2026-02-12 18:28:54,830 | INFO | ETL | Loading validation schema: validation/customers.yaml
+2026-02-12 18:28:54,939 | INFO | ETL | Schema validation completed | Valid rows: 100 | Quarantined rows: 100
+2026-02-12 18:28:54,971 | WARNING | ETL | customers.csv | Business rule failed: retired_age_check | Rows: 15
+2026-02-12 18:28:55,027 | WARNING | ETL | customers.csv validated with 15 invalid rows (quarantined)
+2026-02-12 18:28:55,028 | INFO | ETL | Validation successful for file: customers.csv
+2026-02-12 18:28:55,035 | WARNING | ETL | customers.csv | Quarantined rows written: 15
+2026-02-12 18:28:55,036 | INFO | ETL | Starting load \u2192 customers.csv \u2192 table: customers
+2026-02-12 18:28:55,036 | INFO | ETL | Loading schema for DB load: validation/customers.yaml
+2026-02-12 18:28:55,299 | INFO | ETL | Ensuring table exists: customers
+2026-02-12 18:28:55,893 | INFO | ETL | SCD2 upsert started for table: customers
+2026-02-12 18:28:56,691 | INFO | ETL | SCD2 SUMMARY : customers | INSERT: 85 | UPDATE: 0 | SKIP: 0
+2026-02-12 18:28:56,691 | INFO | ETL | Load successful for file: customers.csv
+2026-02-12 18:28:56,889 | INFO | ETL | SUCCESS customers.csv
+2026-02-12 18:28:56,890 | INFO | ETL | START processing file: products.csv
+2026-02-12 18:28:56,892 | INFO | ETL | Starting validation for file: products.csv
+2026-02-12 18:28:57,042 | INFO | ETL | Loading validation schema: validation/products.yaml
+2026-02-12 18:28:57,060 | ERROR | ETL | FAILED processing file: products.csv
+Traceback (most recent call last):
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\run_pipeline.py", line 44, in <module>
+    is_valid, errors, valid_df, quarantine_df = validate(proc_path, filename)
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\scripts\validate.py", line 51, in validate
+    schema = load_schema(filename)
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\scripts\validate.py", line 15, in load_schema
+    return yaml.safe_load(f)
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+yaml.scanner.ScannerError: while scanning a simple key
+  in "validation/products.yaml", line 2, column 1
+could not find expected ':'
+  in "validation/products.yaml", line 4, column 1
+2026-02-12 18:28:57,506 | INFO | ETL | START processing file: transactions.csv
+2026-02-12 18:28:57,507 | INFO | ETL | Starting validation for file: transactions.csv
+2026-02-12 18:28:57,534 | INFO | ETL | Loading validation schema: validation/transactions.yaml
+2026-02-12 18:28:57,581 | INFO | ETL | Schema validation completed | Valid rows: 100 | Quarantined rows: 100
+2026-02-12 18:28:57,619 | WARNING | ETL | transactions.csv | Business rule failed: stale_transaction | Rows: 66
+2026-02-12 18:28:57,627 | WARNING | ETL | transactions.csv validated with 66 invalid rows (quarantined)
+2026-02-12 18:28:57,627 | INFO | ETL | Validation successful for file: transactions.csv
+2026-02-12 18:28:57,733 | ERROR | ETL | FAILED processing file: transactions.csv
+Traceback (most recent call last):
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\run_pipeline.py", line 64, in <module>
+    valid_df, ref_quarantine = validate_referential_integrity(valid_df)
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\scripts\validators\referential_validator.py", line 28, in validate_referential_integrity
+    products = fetch_reference_set("products", "sku")
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\scripts\validators\referential_validator.py", line 10, in fetch_reference_set
+    cur.execute(f"SELECT {column} FROM {table}")
+psycopg2.errors.UndefinedTable: relation "products" does not exist
+LINE 1: SELECT sku FROM products
+                        ^
+
+2026-02-12 18:28:57,909 | INFO | ETL | PIPELINE SUMMARY | Total: 3 | Processed: 1 | Rejected: 0 | Failed: 2

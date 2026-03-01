@@ -1,0 +1,102 @@
+Customer_ID,Customer_Type,First_Name,Last_Name,Gender,Age,Marital_Status,Children,Employment_Status,Income_Level,Address_Line1,Address_Line2,City,State,Pincode,Phone_No,Email_ID
+CUST_001,Existing,Falan,Trivedi,Male,54,Married,Yes,Student,5 - 10L,"69/29,Oak Zila,Ulsoor H.O.",,Bangalore,Karnataka,560008,8404784484,falan_trivedi_32@gmail.com
+CUST_002,New,Gautami,Bawa,Female,45,Married,Yes,Employed,0 - 2L,"181,Ahuja Circle,Doddakallasandra",,Bangalore,Karnataka,560062,9079454751,gautami_bawa_67@gmail.com
+CUST_003,Existing,Riya,Sawhney,Female,31,Single,Yes,Employed,0 - 2L,"H.No. 43,Sahni Circle,Yelhanka",,Bangalore,Karnataka,560064,8439861177,riya_sawhney_52@gmail.com
+CUST_004,New,Geetika,Vaidya,Female,60,Divorced,Yes,Retired,2 - 5L,"86,Dey Street,Jayanagar South",,Bangalore,Karnataka,560041,8160036590,geetika_vaidya_57@gmail.com
+CUST_005,New,Leena,Kant,Female,50,Married,Yes,Retired,10 - 15L,"885,Handa Road,Dooravaninagar",,Bangalore,Karnataka,560016,8393050131,leena_kant_7812@gmail.com
+CUST_006,Existing,Pranav,Kade,Male,55,Single,Yes,Retired,20+L,"87/982,Jayaraman Road,J C Nagar",,Bangalore,Karnataka,560006,9382302476,pranav_kade_35@gmail.com
+CUST_007,New,Ekantika,Johal,Female,35,Divorced,Yes,Self Employed,20+L,"36,Rajagopal Path,Peenya S.I.",,Bangalore,Karnataka,560058,8507848822,ekantika_johal_31@gmail.com
+CUST_008,New,Daksh,Wali,Male,34,Married,Yes,Employed,20+L,"15/370,Nori Street,Jayanagar 3rd Block",,Bangalore,Karnataka,560011,8163478655,daksh_wali_7@gmail.com
+CUST_009,New,Charvi,Mitter,Female,32,Divorced,Yes,Student,10 - 15L,"42,Sanghvi Chowk,Gokula Extension",,Bangalore,Karnataka,560054,9518305322,charvi_mitter_45@gmail.com
+CUST_010,New,Bina,Gill,Female,66,Single,No,Student,5 - 10L,"55,Tara Chowk,Kadugodi",,Bangalore,Karnataka,560067,8275002741,bina_gill_69@gmail.com
+CUST_011,Existing,Fitan,Rastogi,Male,41,Married,No,Self Employed,2 - 5L,"H.No. 235,Jha Road,Yelhanka",,Bangalore,Karnataka,560064,9976176763,fitan_rastogi_91@gmail.com
+CUST_012,New,Vinaya,Sangha,Female,35,Divorced,Yes,Student,10 - 15L,"371,Kaur Road,Koramangala 6th Block",,Bangalore,Karnataka,560095,9320430821,vinaya_sangha_99@gmail.com
+CUST_013,Existing,Oscar,Ahluwalia,Male,56,Married,Yes,Self Employed,2 - 5L,"06,Balakrishnan,Bannerghatta",,Bangalore,Karnataka,560083,8203706157,oscar_ahluwalia_88@gmail.com
+CUST_014,Existing,Anthony,Bahri,Male,30,Married,Yes,Self Employed,15 - 20L,"51/741,Mammen Street,Marathahally Colony",,Bangalore,Karnataka,560037,9975175218,anthony_bahri_27@gmail.com
+CUST_015,Existing,Kashish,Balan,Female,26,Divorced,Yes,Unemployed,2 - 5L,"H.No. 691,Solanki Ganj,Richmond Town",,Bangalore,Karnataka,560025,8900299260,kashish_balan_4@gmail.com
+CUST_016,New,Qasim,Roy,Male,42,Divorced,No,Unemployed,2 - 5L,"41,Mistry,Hesaraghatta Lake",,Bangalore,Karnataka,560089,9222373063,qasim_roy_8@gmail.com
+CUST_017,Existing,Harinakshi,Suresh,Female,51,Married,No,Unemployed,5 - 10L,"H.No. 53,Pandit Street,Gandhinagar",,Bangalore,Karnataka,560009,8673618638,harinakshi_suresh_21@gmail.com
+CUST_018,Existing,Arya,Hayer,Female,67,Single,No,Unemployed,10 - 15L,"H.No. 02,Mistry Circle,Peenya S.I.",,Bangalore,Karnataka,560058,8363568855,arya_hayer_65@gmail.com
+CUST_019,New,Noah,Borah,Male,53,Divorced,No,Self Employed,15 - 20L,"H.No. 399,Luthra,Jayanagar 3rd Block",,Bangalore,Karnataka,560011,9110008286,noah_borah_16@gmail.com
+CUST_020,Existing,Yashasvi,Sama,Female,38,Single,Yes,Student,20+L,"H.No. 541,Mane Marg,Magadi Road",,Bangalore,Karnataka,560023,8142021468,yashasvi_sama_1@gmail.com
+CUST_021,Existing,Jackie,Shroff,Male,43,Married,Yes,Unemployed,15 - 20L,"763,Sodhi Road,Carmelram",,Bangalore,Karnataka,560035,8593763594,advay_shroff_52@gmail.com
+CUST_022,New,Omaja,Dash,Female,43,Divorced,Yes,Unemployed,0 - 2L,"H.No. 05,Nigam Road,Fraser Town",,Bangalore,Karnataka,560005,8296238222,omaja_dash_81@gmail.com
+CUST_023,New,Akshay,Upadhyay,Male,30,Married,Yes,Employed,5 - 10L,"H.No. 844,Khalsa Marg,Bangalore University",,Bangalore,Karnataka,560056,9832674289,akshay_upadhyay_73@gmail.com
+CUST_024,New,Krishna,Kibe,Female,25,Married,No,Self Employed,2 - 5L,"485,Iyengar Path,Bannerghatta",,Bangalore,Karnataka,560083,8944373147,krishna_kibe_92@gmail.com
+CUST_025,New,Sanya,Narula,Female,25,Single,No,Employed,0 - 2L,"36,Date Path,Thyagarajanagar",,Bangalore,Karnataka,560028,8205504852,sanya_narula_67@gmail.com
+CUST_026,New,Sara,Deol,Female,64,Single,Yes,Self Employed,10 - 15L,"28/05,Chakraborty Marg,Kothanur",,Bangalore,Karnataka,560077,8442347612,sara_deol_99@gmail.com
+CUST_027,New,Vyanjana,Ray,Female,29,Married,No,Student,10 - 15L,"H.No. 17,Keer Ganj,Subramanyapura",,Bangalore,Karnataka,560061,9373914275,vyanjana_ray_12@gmail.com
+CUST_028,Existing,Priya,Parmar,Female,60,Divorced,No,Self Employed,15 - 20L,"88/111,Seth Marg,Hospital Town West",,Bangalore,Karnataka,560015,8577431358,priya_parmar_17@gmail.com
+CUST_029,Existing,Chatresh,Bail,Male,47,Married,Yes,Self Employed,0 - 2L,"56,Kulkarni Street,Benson Town",,Bangalore,Karnataka,560046,9212674541,chatresh_bail_51@gmail.com
+CUST_030,New,Tanay,Nadkarni,Male,24,Single,Yes,Employed,0 - 2L,"H.No. 74,Magar Zila,Maruthisevanagar",,Bangalore,Karnataka,560033,8649896579,tanay_nadkarni_62@gmail.com
+CUST_031,New,Girindra,Manne,Male,31,Married,Yes,Student,15 - 20L,"H.No. 65,Swaminathan Circle,Basavangudi",,Bangalore,Karnataka,560004,9655434946,girindra_manne_99@gmail.com
+CUST_032,New,Januja,Prasad,Female,59,Single,No,Retired,0 - 2L,"30/553,Gokhale Nagar,Mahalakshmi Layout",,Bangalore,Karnataka,560086,8563243109,januja_prasad_1@gmail.com
+CUST_033,Existing,Anirudh,Brahmbhatt,Male,27,Single,Yes,Employed,2 - 5L,"H.No. 41,Bora Road,C V Raman Nagar",,Bangalore,Karnataka,560093,8931757786,anirudh_brahmbhatt_82@gmail.com
+CUST_034,Existing,Chameli,Char,Female,57,Married,No,Employed,15 - 20L,"H.No. 383,Kohli Ganj,Yelhanka",,Bangalore,Karnataka,560064,9070226212,chameli_char_81@gmail.com
+CUST_035,Existing,Kavya,Parikh,Female,49,Single,No,Employed,20+L,"74/48,Shankar Marg,Hebbal Agri. Farm",,Bangalore,Karnataka,560024,9059383790,kavya_parikh_25@gmail.com
+CUST_036,New,Leena,Ravi,Female,69,Divorced,No,Retired,5 - 10L,"48,Dugal Marg,Vasanthanagar",,Bangalore,Karnataka,560052,8592095755,leena_ravi_5@gmail.com
+CUST_037,Existing,Madhav,Tank,Male,67,Single,Yes,Unemployed,5 - 10L,"H.No. 96,Sankaran Marg,Koramangala 6th Block",,Bangalore,Karnataka,560095,8122043739,madhav_tank_74@gmail.com
+CUST_038,Existing,Kabir,Andra,Male,19,Single,No,Self Employed,0 - 2L,"28/76,Chakraborty Ganj,New Tippasandra",,Bangalore,Karnataka,560075,8888521239,kabir_andra_7@gmail.com
+CUST_039,Existing,Ganga,Buch,Female,64,Married,No,Student,15 - 20L,"91/30,Mitra Nagar,H K P Road",,Bangalore,Karnataka,560051,8596205743,ganga_buch_58@gmail.com
+CUST_040,Existing,Eta,Khurana,Female,60,Married,No,Student,2 - 5L,"H.No. 942,Tara Street,Peenya S.I.",,Bangalore,Karnataka,560058,8224765570,eta_khurana_64@gmail.com
+CUST_041,Existing,Girindra,Varghese,Male,31,Married,No,Student,20+L,"45/734,Gara Road,Malleswaram West",,Bangalore,Karnataka,560055,8609575841,girindra_varghese_38@gmail.com
+CUST_042,Existing,Chakradhar,Sahota,Male,28,Divorced,No,Unemployed,10 - 15L,"874,Anne Ganj,Richmond Town",,Bangalore,Karnataka,560025,9606228702,chakradhar_sahota_81@gmail.com
+CUST_043,New,Ishani,Master,Female,34,Married,No,Unemployed,10 - 15L,"742,Barad Circle,G.K.V.K.",,Bangalore,Karnataka,560065,8330886741,ishani_master_12@gmail.com
+CUST_044,New,Eiravati,Modi,Female,21,Divorced,No,Self Employed,5 - 10L,"006,Baria Circle,New Tippasandra",,Bangalore,Karnataka,560075,9890743345,eiravati_modi_8@gmail.com
+CUST_045,New,Jonathan,Malhotra,Male,51,Divorced,No,Self Employed,15 - 20L,"H.No. 585,Mohanty,Air Force Stn. Yelahanka",,Bangalore,Karnataka,560063,9542041789,jonathan_malhotra_51@gmail.com
+CUST_046,New,Aradhana,Gara,Female,63,Married,No,Self Employed,2 - 5L,"366,Roy Street,Vimanapura",,Bangalore,Karnataka,560017,9649174858,aradhana_gara_73@gmail.com
+CUST_047,Existing,Aachal,Edwin,Female,66,Married,Yes,Unemployed,10 - 15L,"H.No. 86,Ben Ganj,Dharmaram College",,Bangalore,Karnataka,560029,9654731603,aachal_edwin_87@gmail.com
+CUST_048,New,Devika,Mallick,Female,20,Single,Yes,Employed,15 - 20L,"H.No. 10,Raj Nagar,Madivala",,Bangalore,Karnataka,560068,8381249457,devika_mallick_18@gmail.com
+CUST_049,Existing,Sneha,Sastry,Female,40,Single,No,Self Employed,15 - 20L,"07/89,Boase Circle,Bangalore G.P.O.",,Bangalore,Karnataka,560001,8402563089,sneha_sastry_45@gmail.com
+CUST_050,Existing,Tamanna,Choudhury,Female,59,Divorced,Yes,Self Employed,20+L,"49/99,Borra Nagar,Hebbal Agri. Farm",,Bangalore,Karnataka,560024,8948487913,tamanna_choudhury_48@gmail.com
+CUST_051,New,Anusha,Keer,Female,54,Divorced,No,Self Employed,20+L,"H.No. 22,Bose Street,Malleswaram West",,Bangalore,Karnataka,560055,8271238428,anusha_keer_29@gmail.com
+CUST_052,Existing,Jacob,Biswas,Male,33,Divorced,Yes,Self Employed,20+L,"50/907,Sankaran Path,G.K.V.K.",,Bangalore,Karnataka,560065,8372764809,jacob_biswas_37@gmail.com
+CUST_053,Existing,Samesh,Goswami,Male,58,Single,Yes,Retired,10 - 15L,"42,Desai Ganj,Krishnarajapuram",,Bangalore,Karnataka,560036,9426723116,samesh_goswami_1@gmail.com
+CUST_054,Existing,Aradhana,Srinivas,Female,18,Single,No,Self Employed,10 - 15L,"63/61,Malhotra Path,Jayanagar East",,Bangalore,Karnataka,560069,9838083273,aradhana_srinivas_82@gmail.com
+CUST_055,Existing,Yutika,Menon,Female,20,Divorced,Yes,Employed,5 - 10L,"60/77,Verma Path,Bansawadi",,Bangalore,Karnataka,560043,8970554065,yutika_menon_56@gmail.com
+CUST_056,New,Bhavya,Singhal,Female,43,Divorced,Yes,Employed,20+L,"H.No. 61,Virk Marg,Jalahalli",,Bangalore,Karnataka,560013,8522207171,bhavya_singhal_87@gmail.com
+CUST_057,New,Gavin,Ravel,Male,64,Divorced,Yes,Student,20+L,"95/67,Muni Street,Vidyaranyapura",,Bangalore,Karnataka,560097,9890709013,gavin_ravel_8@gmail.com
+CUST_058,New,Diya,Bala,Female,19,Married,No,Self Employed,15 - 20L,"21,Minhas Street,Domlur",,Bangalore,Karnataka,560071,9802662258,diya_bala_1@gmail.com
+CUST_059,Existing,Vritti,Agrawal,Female,31,Single,Yes,Employed,5 - 10L,"63/96,Chawla Circle,Nagasandra",,Bangalore,Karnataka,560073,8041995364,vritti_agrawal_60@gmail.com
+CUST_060,Existing,Sanaya,Chad,Female,36,Married,Yes,Unemployed,15 - 20L,"97/40,Borra Marg,Peenya S.I.",,Bangalore,Karnataka,560058,8451584973,sanaya_chad_38@gmail.com
+CUST_061,Existing,Mitesh,Agarwal,Male,21,Single,No,Unemployed,15 - 20L,"09,Sharaf Circle,Wilson Garden",,Bangalore,Karnataka,560027,8674103483,mitesh_agarwal_6@gmail.com
+CUST_062,New,Om,Balan,Male,44,Single,No,Employed,20+L,"618,Sinha Chowk,Kadugodi",,Bangalore,Karnataka,560067,8694339760,om_balan_98@gmail.com
+CUST_063,New,Anthony,Shroff,Male,40,Divorced,No,Employed,0 - 2L,"51/24,Gill,Thyagarajanagar",,Bangalore,Karnataka,560028,8118069911,anthony_shroff_51@gmail.com
+CUST_064,Existing,Yashoda,Chaudry,Female,48,Single,No,Student,0 - 2L,"51,Lata Nagar,Nayandahalli",,Bangalore,Karnataka,560039,8628175735,yashoda_chaudry_55@gmail.com
+CUST_065,Existing,Daksha,Rajagopal,Female,45,Single,No,Unemployed,2 - 5L,"928,Vasa Ganj,Yelhanka",,Bangalore,Karnataka,560064,9713086361,daksha_rajagopal_36@gmail.com
+CUST_066,New,Rachana,Korpal,Female,68,Single,No,Self Employed,5 - 10L,"47/589,Vig Chowk,Chamrajpet West",,Bangalore,Karnataka,560018,8041428509,rachana_korpal_65@gmail.com
+CUST_067,Existing,Hiral,Murthy,Female,40,Married,Yes,Employed,10 - 15L,"14/274,Borde Circle,Chikkabanavara",,Bangalore,Karnataka,560090,9811111686,hiral_murthy_65@gmail.com
+CUST_068,New,Girish,Shetty,Male,35,Divorced,Yes,Employed,0 - 2L,"21/17,Dora Circle,Jayanagar East",,Bangalore,Karnataka,560069,9996784561,girish_shetty_54@gmail.com
+CUST_069,Existing,Finn,Samra,Male,45,Married,Yes,Unemployed,5 - 10L,"02/370,Kadakia Ganj,Vidyaranyapura",,Bangalore,Karnataka,560097,9547455157,finn_samra_91@gmail.com
+CUST_070,Existing,Bhavini,Maharaj,Female,53,Single,No,Unemployed,10 - 15L,"H.No. 47,Magar Chowk,J P Nagar",,Bangalore,Karnataka,560078,9476953921,bhavini_maharaj_24@gmail.com
+CUST_071,Existing,Jai,Joshi,Male,67,Married,Yes,Retired,2 - 5L,"07/965,Subramanian Path,Jayanagar East",,Bangalore,Karnataka,560069,8568361615,jai_joshi_46@gmail.com
+CUST_072,New,Liam,Dugal,Male,42,Divorced,No,Employed,5 - 10L,"717,Batta Road,Bannerghatta",,Bangalore,Karnataka,560083,8456043568,liam_dugal_66@gmail.com
+CUST_073,New,Shivani,Morar,Female,50,Single,No,Unemployed,2 - 5L,"25/04,Oza Street,Bangalore City H.O.",,Bangalore,Karnataka,560002,8497487458,shivani_morar_39@gmail.com
+CUST_074,New,Nihal,Konda,Male,34,Divorced,No,Self Employed,0 - 2L,"H.No. 054,Sachdeva Ganj,HMT",,Bangalore,Karnataka,560031,9980026348,nihal_konda_98@gmail.com
+CUST_075,Existing,Kalpit,Wable,Male,69,Married,No,Self Employed,10 - 15L,"03/80,Rai Street,Nagashettyhalli",,Bangalore,Karnataka,560094,8885304022,kalpit_wable_95@gmail.com
+CUST_076,New,Zashil,Chakraborty,Male,21,Single,Yes,Unemployed,2 - 5L,"538,Panchal Path,Shanthinagar",,Bangalore,Karnataka,560027,8136907760,zashil_chakraborty_22@gmail.com
+CUST_077,New,Nakul,Iyengar,Male,53,Married,Yes,Student,5 - 10L,"H.No. 91,Venkatesh Street,Vimanapura",,Bangalore,Karnataka,560017,8509826359,nakul_iyengar_82@gmail.com
+CUST_078,Existing,Harish,Saini,Male,35,Divorced,Yes,Unemployed,0 - 2L,"60,Pant Nagar,C V Raman Nagar",,Bangalore,Karnataka,560093,9296756279,harish_saini_79@gmail.com
+CUST_079,New,Warhi,Garg,Female,20,Divorced,Yes,Unemployed,0 - 2L,"86/637,Saini Path,Yeswantpur",,Bangalore,Karnataka,560022,8778575053,warhi_garg_67@gmail.com
+CUST_080,New,Tarak,Pingle,Male,44,Single,Yes,Self Employed,5 - 10L,"H.No. 23,Dalal Ganj,Ulsoor H.O.",,Bangalore,Karnataka,560008,8916153578,tarak_pingle_88@gmail.com
+CUST_081,Existing,Kashvi,Setty,Female,55,Single,No,Retired,5 - 10L,"82/74,Vyas Street,Hebbal Agri. Farm",,Bangalore,Karnataka,560024,9067943944,kashvi_setty_29@gmail.com
+CUST_082,Existing,Utkarsh,Shetty,Male,55,Single,No,Student,20+L,"03/89,Kulkarni Circle,C V Raman Nagar",,Bangalore,Karnataka,560093,9660168149,utkarsh_shetty_89@gmail.com
+CUST_083,New,Yash,Lad,Male,58,Single,No,Retired,10 - 15L,"60/34,Madan Road,Madivala",,Bangalore,Karnataka,560068,8226365785,yash_lad_100@gmail.com
+CUST_084,Existing,Chakradev,Iyengar,Male,41,Married,No,Employed,5 - 10L,"61/90,Solanki Street,Kadugodi",,Bangalore,Karnataka,560067,9520739918,chakradev_iyengar_60@gmail.com
+CUST_085,Existing,Azaan,Sarin,Male,28,Single,Yes,Self Employed,10 - 15L,"03,Cheema Path,Viveknagar",,Bangalore,Karnataka,560047,9594940715,azaan_sarin_89@gmail.com
+CUST_086,New,Kala,Varughese,Female,24,Married,No,Self Employed,15 - 20L,"H.No. 503,Mall Ganj,Domlur",,Bangalore,Karnataka,560071,9475109583,kala_varughese_2@gmail.com
+CUST_087,New,Henry,Kohli,Male,69,Married,Yes,Unemployed,0 - 2L,"455,Barman Path,Hesaraghatta Lake",,Bangalore,Karnataka,560089,9383581737,henry_kohli_66@gmail.com
+CUST_088,Existing,Aradhana,Aurora,Female,56,Married,No,Employed,20+L,"H.No. 874,Tella Nagar,Viveknagar",,Bangalore,Karnataka,560047,8724939833,aradhana_aurora_62@gmail.com
+CUST_089,New,Faraj,Gara,Male,27,Married,No,Unemployed,15 - 20L,"H.No. 26,Randhawa Chowk,RT Nagar",,Bangalore,Karnataka,560032,9851377624,faraj_gara_81@gmail.com
+CUST_090,Existing,Inaya,Chaudhary,Female,53,Single,No,Unemployed,10 - 15L,"H.No. 285,Deo Chowk,Nagarbhavi",,Bangalore,Karnataka,560072,9906675326,inaya_chaudhary_45@gmail.com
+CUST_091,New,Hemani,Chand,Female,58,Single,No,Retired,20+L,"32/39,Chandran Zila,Hospital Town West",,Bangalore,Karnataka,560015,8117714089,hemani_chand_23@gmail.com
+CUST_092,New,Janani,Zachariah,Female,40,Divorced,Yes,Self Employed,10 - 15L,"19,Sankaran Ganj,J C Nagar",,Bangalore,Karnataka,560006,9336500663,janani_zachariah_53@gmail.com
+CUST_093,Existing,Oliver,Parsa,Male,56,Divorced,Yes,Self Employed,15 - 20L,"H.No. 36,Dixit Zila,Air Force Stn. Yelahanka",,Bangalore,Karnataka,560063,8049835277,oliver_parsa_60@gmail.com
+CUST_094,Existing,Yamini,Sankaran,Female,66,Married,Yes,Student,0 - 2L,"23/392,Balan Marg,Nayandahalli",,Bangalore,Karnataka,560039,9664784789,yamini_sankaran_85@gmail.com
+CUST_095,Existing,Siya,Karpe,Female,21,Divorced,No,Self Employed,5 - 10L,"H.No. 24,Sarna Ganj,J P Nagar",,Bangalore,Karnataka,560078,8302222971,siya_karpe_81@gmail.com
+CUST_096,New,Qabil,Kunda,Male,30,Single,No,Employed,20+L,"H.No. 28,Nagi,Shanthinagar",,Bangalore,Karnataka,560027,9712725972,qabil_kunda_11@gmail.com
+CUST_097,Existing,Wahab,Goswami,Male,30,Divorced,No,Student,15 - 20L,"H.No. 499,Loyal Circle,Kothanur",,Bangalore,Karnataka,560077,9455786982,wahab_goswami_40@gmail.com
+CUST_098,Existing,Jacob,Natarajan,Male,23,Divorced,No,Employed,20+L,"07/45,Pillai Road,Kothanur, Hennur, Bagalur Road",,Bangalore,Karnataka,560077,8526388205,jacob_natarajan_18@gmail.com
+CUST_099,Existing,Akshay,Mannan,Male,27,Married,No,Unemployed,15 - 20L,"04,Brar Road,Peenya S.I.",,Bangalore,Karnataka,560058,9258933721,akshay_mannan_78@gmail.com
+CUST_100,Existing,Gautami,Mander,Female,50,Single,Yes,Employed,0 - 2L,"339,Peri,Bansawadi",,Bangalore,Karnataka,560043,9156586733,gautami_mander_34@gmail.com
+CUST_101,New,Jambi,Mambi,Male,30,Single,Yes,Employed,0 - 2L,"300,23rd Cross, J P Nagar",,Bangalore,Karnataka,560078,8002345664,jambi_mambi_30@gmail.com

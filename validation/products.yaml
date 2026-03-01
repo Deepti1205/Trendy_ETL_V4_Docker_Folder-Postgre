@@ -1,0 +1,85 @@
+table_name: products
+table_type: scd2
+
+business_key:
+    - SKU
+
+file_rules:
+  reject_if_missing_columns: true
+  reject_if_invalid_rows_percent_gt: 20
+
+columns: 
+    ProductID: 
+        type: string
+        required: true
+        regex: "^PROD_[0-9]{5}$"
+        max_length: 50
+        
+    SKU:
+        type: string
+        required: true
+        unique: true
+        regex: "^SKU-[A-Z]{3}-[0-9]{4}$"
+        max_length: 50
+        
+    Category_Name:
+        type: string
+        required: true
+        max_length: 100
+        
+    Sub-Category:
+        type: string
+        required: true
+        max_length: 100
+        
+    Product_Name:
+        type: string
+        required: true
+        max_length: 100
+    
+    Brand:
+        type: string
+        required: true
+        max_length: 100
+        
+    Product_Description:
+        type: string
+        required: true
+        max_length: 1000
+        
+    Gender:
+        type: string
+        required: false
+        allowed_values: [Men,Women,Unisex,Not Required]
+        
+    Color:
+        type: string
+        required: false
+        max_length: 10
+    
+    Size:
+        type: string
+        required: false
+        allowed_values: [S,M,L,XL,XXL,Compact,Standard,Desktop,Small,Medium,Large,Home Theatre,Personal,Professional,Student,Gaming,Over-ear,On-ear,In-ear,Full-frame,24MP,48MP,Not Required]
+        
+    Selling_Price:
+        type: float
+        required: true
+        min: 1
+        
+    Discount:
+        type: float
+        required: false
+        min: 0
+        max: 90
+        
+business_rules:
+  - name: discount_less_than_price
+    description: "Discount must be less than selling price"
+    condition: "Discount >= Selling_Price"
+    action: reject_row
+
+  - name: excessive_discount_check
+    description: "Discount > 70% requires manual review"
+    condition: "Discount > (Selling_Price * 0.7)"
+    action: warn

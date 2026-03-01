@@ -1,0 +1,123 @@
+table_name: customers
+table_type: scd2
+
+business_key:
+    - Customer_ID
+
+file_level:
+  reject_if_missing_columns: true
+  reject_if_invalid_rows_percent_gt: 20
+  reject_if_duplicate_file: true
+
+columns:
+    Customer_ID:
+        type: string
+        required: true
+        unique: true
+        regex: "^CUST_[0-9]+$"
+        max_length: 50
+    
+    Customer_Type:
+        type: string
+        required: true
+        allowed_values: ["New","Existing"]        
+    
+    First_Name:
+        type: string
+        required: true 
+        max_length: 100
+    
+    Last_Name:
+        type: string
+        required: true
+        max_length: 100
+        
+    Gender:
+        type: string
+        required: true
+        allowed_values: ["Male", "Female", "Other"]        
+        
+    Age:
+        type: int
+        required: true
+        min: 0
+        max: 120        
+        
+    Marital_Status:
+        type: string
+        required: false
+        allowed_values: ["Married","Divorced","Single"]
+        
+    Children:
+        tyrpe: string
+        required: false
+        allowed_values: ["Yes","No"]
+        
+    Employment_Status:
+        tyrpe: string
+        required: true
+        allowed_values: ["Employed","Student","Self Employed","Retired","Unemployed"]
+        
+    Income_Level:
+        tyrpe: string
+        required: true
+        allowed_values: ["0 - 2L","2 - 5L","5 - 10L","10 - 15L","15 - 20L","20+L"]
+        
+    Address_Line1:
+        tyrpe: string
+        required: true
+        max_length: 200
+        
+    Address_Line2:
+        tyrpe: string
+        required: false
+        max_length: 200
+        
+    City:
+        tyrpe: string
+        required: true
+        max_length: 50
+    
+    State:
+        tyrpe: string
+        required: true
+        max_length: 50
+        
+    Pincode:
+        tyrpe: string
+        required: true
+        reg_ex: "^[0-9]{6}$"
+        max_length: 10
+        
+    Phone_No:
+        tyrpe: string
+        required: true
+        reg_ex: "^[6-9][0-9]{9}$"
+        max_length: 15
+        
+    Email_ID:
+        tyrpe: string
+        required: true
+        reg_ex: '^[\w._]+@[\w._]+\.[\w]+$'
+        max_length: 255
+        
+business_rules:
+  - name: minor_employment_check
+    description: "Customers below 18 should not be employed"
+    condition: "Age < 18 and Employment_Status in ['Employed', 'Self-Employed']"
+    action: reject_row
+
+  - name: retired_age_check
+    description: "Retired customers should be at least 60"
+    condition: "Employment_Status == 'Retired' and Age < 50"
+    action: reject_row
+    
+  - name: contact_mandatory
+    description: "At least one contact method must be present"
+    condition: "Phone_No is None and Email_ID is None"
+    action: reject_row
+    
+  - name: indian_pincode_check
+    description: "Indian pincodes must be exactly 6 digits"
+    condition: "Pincode is not None and not str(Pincode).isdigit() or len(str(Pincode)) != 6"
+    action: reject_row

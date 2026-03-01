@@ -1,0 +1,54 @@
+2026-02-12 18:34:04,113 | INFO | ETL | Pipeline started | Found 3 files
+2026-02-12 18:34:04,113 | INFO | ETL | START processing file: customers.csv
+2026-02-12 18:34:04,113 | INFO | ETL | Starting validation for file: customers.csv
+2026-02-12 18:34:04,113 | INFO | ETL | Loading validation schema: validation/customers.yaml
+2026-02-12 18:34:04,168 | INFO | ETL | Schema validation completed | Valid rows: 100 | Quarantined rows: 100
+2026-02-12 18:34:04,175 | WARNING | ETL | customers.csv | Business rule failed: retired_age_check | Rows: 15
+2026-02-12 18:34:04,206 | WARNING | ETL | customers.csv validated with 15 invalid rows (quarantined)
+2026-02-12 18:34:04,206 | INFO | ETL | Validation successful for file: customers.csv
+2026-02-12 18:34:04,206 | WARNING | ETL | customers.csv | Quarantined rows written: 15
+2026-02-12 18:34:04,206 | INFO | ETL | Starting load \u2192 customers.csv \u2192 table: customers
+2026-02-12 18:34:04,206 | INFO | ETL | Loading schema for DB load: validation/customers.yaml
+2026-02-12 18:34:04,315 | INFO | ETL | Ensuring table exists: customers
+2026-02-12 18:34:04,643 | INFO | ETL | SCD2 upsert started for table: customers
+2026-02-12 18:34:05,457 | INFO | ETL | SCD2 SUMMARY : customers | INSERT: 85 | UPDATE: 0 | SKIP: 0
+2026-02-12 18:34:05,472 | INFO | ETL | Load successful for file: customers.csv
+2026-02-12 18:34:05,655 | INFO | ETL | SUCCESS customers.csv
+2026-02-12 18:34:05,655 | INFO | ETL | START processing file: products.csv
+2026-02-12 18:34:05,657 | INFO | ETL | Starting validation for file: products.csv
+2026-02-12 18:34:05,685 | INFO | ETL | Loading validation schema: validation/products.yaml
+2026-02-12 18:34:05,738 | ERROR | ETL | FAILED processing file: products.csv
+Traceback (most recent call last):
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\run_pipeline.py", line 44, in <module>
+    is_valid, errors, valid_df, quarantine_df = validate(proc_path, filename)
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\scripts\validate.py", line 56, in validate
+    schema_valid_df, schema_quarantine_df, schema_errors = validate_schema(
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\scripts\validators\schema_validator.py", line 106, in validate_schema
+    quarantine_df = df[error_series.index].copy()
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\frame.py", line 3511, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\indexes\base.py", line 5782, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\deept\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\indexes\base.py", line 5842, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Int64Index([ 460,  461,  462,  463,  464,  465,  466,  467,  468,  469,\n            ...\n            1070, 1071, 1072, 1073, 1074, 1075, 1076, 1077, 1078, 1079],\n           dtype='int64', length=620)] are in the [columns]"
+2026-02-12 18:34:06,033 | INFO | ETL | START processing file: transactions.csv
+2026-02-12 18:34:06,033 | INFO | ETL | Starting validation for file: transactions.csv
+2026-02-12 18:34:06,033 | INFO | ETL | Loading validation schema: validation/transactions.yaml
+2026-02-12 18:34:06,114 | INFO | ETL | Schema validation completed | Valid rows: 100 | Quarantined rows: 100
+2026-02-12 18:34:06,138 | WARNING | ETL | transactions.csv | Business rule failed: stale_transaction | Rows: 66
+2026-02-12 18:34:06,143 | WARNING | ETL | transactions.csv validated with 66 invalid rows (quarantined)
+2026-02-12 18:34:06,143 | INFO | ETL | Validation successful for file: transactions.csv
+2026-02-12 18:34:06,237 | ERROR | ETL | FAILED processing file: transactions.csv
+Traceback (most recent call last):
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\run_pipeline.py", line 64, in <module>
+    valid_df, ref_quarantine = validate_referential_integrity(valid_df)
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\scripts\validators\referential_validator.py", line 28, in validate_referential_integrity
+    products = fetch_reference_set("products", "sku")
+  File "D:\Goals\Skill_Upgrade\Data_Engineering\Projects\Epsilon_DE_Trendy\etl_project_V3\scripts\validators\referential_validator.py", line 10, in fetch_reference_set
+    cur.execute(f"SELECT {column} FROM {table}")
+psycopg2.errors.UndefinedTable: relation "products" does not exist
+LINE 1: SELECT sku FROM products
+                        ^
+
+2026-02-12 18:34:06,276 | INFO | ETL | PIPELINE SUMMARY | Total: 3 | Processed: 1 | Rejected: 0 | Failed: 2

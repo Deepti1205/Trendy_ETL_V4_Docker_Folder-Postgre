@@ -1,0 +1,37 @@
+2026-02-18 12:50:13,781 | INFO | ETL | Pipeline started | Found 3 files
+2026-02-18 12:50:13,782 | INFO | ETL | START processing file: customers.csv
+2026-02-18 12:50:13,786 | INFO | ETL | Starting validation for file: customers.csv
+2026-02-18 12:50:13,921 | INFO | ETL | Loading validation schema: validation/customers.yaml
+2026-02-18 12:50:14,034 | INFO | ETL | Schema validation completed | Valid rows: 101 | Quarantined rows: 0
+2026-02-18 12:50:14,123 | INFO | ETL | Validation successful for file: customers.csv
+2026-02-18 12:50:14,140 | INFO | ETL | Starting load → customers.csv → table: customers
+2026-02-18 12:50:14,141 | INFO | ETL | Loading schema for DB load: validation/customers.yaml
+2026-02-18 12:50:14,850 | INFO | ETL | Ensuring table exists: customers
+2026-02-18 12:50:15,136 | INFO | ETL | SCD2 upsert started for table: customers
+2026-02-18 12:50:16,155 | INFO | ETL | SCD2 SUMMARY : customers | INSERT: 101 | UPDATE: 0 | SKIP: 0
+2026-02-18 12:50:16,217 | INFO | ETL | Load successful for file: customers.csv
+2026-02-18 12:50:16,455 | INFO | ETL | SUCCESS customers.csv
+2026-02-18 12:50:16,456 | INFO | ETL | START processing file: products.csv
+2026-02-18 12:50:16,476 | INFO | ETL | Starting validation for file: products.csv
+2026-02-18 12:50:16,606 | INFO | ETL | Loading validation schema: validation/products.yaml
+2026-02-18 12:50:16,697 | INFO | ETL | Schema validation completed | Valid rows: 1080 | Quarantined rows: 0
+2026-02-18 12:50:16,786 | INFO | ETL | Validation successful for file: products.csv
+2026-02-18 12:50:16,827 | INFO | ETL | Starting load → products.csv → table: products
+2026-02-18 12:50:16,828 | INFO | ETL | Loading schema for DB load: validation/products.yaml
+2026-02-18 12:50:16,889 | INFO | ETL | Ensuring table exists: products
+2026-02-18 12:50:17,534 | INFO | ETL | SCD2 upsert started for table: products
+2026-02-18 12:50:25,321 | INFO | ETL | SCD2 SUMMARY : products | INSERT: 1080 | UPDATE: 0 | SKIP: 0
+2026-02-18 12:50:25,436 | INFO | ETL | Load successful for file: products.csv
+2026-02-18 12:50:25,535 | INFO | ETL | SUCCESS products.csv
+2026-02-18 12:50:25,535 | INFO | ETL | START processing file: transactions.csv
+2026-02-18 12:50:25,541 | INFO | ETL | Starting validation for file: transactions.csv
+2026-02-18 12:50:25,577 | INFO | ETL | Loading validation schema: validation/transactions.yaml
+2026-02-18 12:50:25,664 | INFO | ETL | Schema validation completed | Valid rows: 42 | Quarantined rows: 58
+2026-02-18 12:50:25,721 | INFO | ETL | Validation successful for file: transactions.csv
+2026-02-18 12:50:25,771 | INFO | ETL | Starting load → transactions.csv → table: transactions
+2026-02-18 12:50:25,772 | INFO | ETL | Loading schema for DB load: validation/transactions.yaml
+2026-02-18 12:50:25,817 | INFO | ETL | Ensuring table exists: transactions
+2026-02-18 12:50:26,240 | INFO | ETL | Inserting 42 rows into transactions
+2026-02-18 12:50:26,362 | INFO | ETL | Load successful for file: transactions.csv
+2026-02-18 12:50:26,478 | INFO | ETL | SUCCESS transactions.csv
+2026-02-18 12:50:26,480 | INFO | ETL | PIPELINE SUMMARY | Total: 3 | Processed: 3 | Rejected: 0 | Failed: 0

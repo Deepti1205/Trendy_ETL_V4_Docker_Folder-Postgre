@@ -1,0 +1,101 @@
+2026-02-12 13:27:38,378 | INFO | ETL | Pipeline started | Found 1 files
+2026-02-12 13:27:38,378 | INFO | ETL | START processing file: customers.csv
+2026-02-12 13:27:38,378 | INFO | ETL | Starting validation for file: customers.csv
+2026-02-12 13:27:38,378 | INFO | ETL | Loading validation schema: validation/customers.yaml
+2026-02-12 13:27:38,424 | INFO | ETL | Schema validation completed | Valid rows: 100 | Quarantined rows: 0
+2026-02-12 13:27:38,425 | WARNING | ETL | customers.csv | Business rule failed: retired_age_check | Rows: 15
+2026-02-12 13:27:38,456 | WARNING | ETL | customers.csv validated with 15 invalid rows (quarantined)
+2026-02-12 13:27:38,456 | INFO | ETL | Validation successful for file: customers.csv
+2026-02-12 13:27:38,456 | WARNING | ETL | customers.csv | Quarantined rows written: 15
+2026-02-12 13:27:38,456 | INFO | ETL | Starting load \u2192 customers.csv \u2192 table: customers
+2026-02-12 13:27:38,456 | INFO | ETL | Loading schema for DB load: validation/customers.yaml
+2026-02-12 13:27:38,561 | INFO | ETL | Ensuring table exists: customers
+2026-02-12 13:27:38,738 | INFO | ETL | SCD2 upsert started for table: customers
+2026-02-12 13:27:38,753 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_001'}
+2026-02-12 13:27:38,754 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_004'}
+2026-02-12 13:27:38,755 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_005'}
+2026-02-12 13:27:38,756 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_006'}
+2026-02-12 13:27:38,756 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_007'}
+2026-02-12 13:27:38,757 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_008'}
+2026-02-12 13:27:38,758 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_010'}
+2026-02-12 13:27:38,758 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_012'}
+2026-02-12 13:27:38,759 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_013'}
+2026-02-12 13:27:38,760 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_014'}
+2026-02-12 13:27:38,760 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_015'}
+2026-02-12 13:27:38,761 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_016'}
+2026-02-12 13:27:38,762 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_017'}
+2026-02-12 13:27:38,762 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_018'}
+2026-02-12 13:27:38,763 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_019'}
+2026-02-12 13:27:38,764 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_020'}
+2026-02-12 13:27:38,764 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_021'}
+2026-02-12 13:27:38,765 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_022'}
+2026-02-12 13:27:38,766 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_024'}
+2026-02-12 13:27:38,766 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_026'}
+2026-02-12 13:27:38,766 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_027'}
+2026-02-12 13:27:38,767 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_028'}
+2026-02-12 13:27:38,769 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_029'}
+2026-02-12 13:27:38,769 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_031'}
+2026-02-12 13:27:38,770 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_032'}
+2026-02-12 13:27:38,771 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_034'}
+2026-02-12 13:27:38,772 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_036'}
+2026-02-12 13:27:38,772 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_037'}
+2026-02-12 13:27:38,773 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_038'}
+2026-02-12 13:27:38,774 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_039'}
+2026-02-12 13:27:38,774 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_040'}
+2026-02-12 13:27:38,775 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_041'}
+2026-02-12 13:27:38,776 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_042'}
+2026-02-12 13:27:38,776 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_043'}
+2026-02-12 13:27:38,777 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_044'}
+2026-02-12 13:27:38,778 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_045'}
+2026-02-12 13:27:38,778 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_046'}
+2026-02-12 13:27:38,779 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_047'}
+2026-02-12 13:27:38,780 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_048'}
+2026-02-12 13:27:38,780 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_049'}
+2026-02-12 13:27:38,781 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_050'}
+2026-02-12 13:27:38,782 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_051'}
+2026-02-12 13:27:38,783 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_052'}
+2026-02-12 13:27:38,783 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_053'}
+2026-02-12 13:27:38,784 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_054'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_055'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_057'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_058'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_059'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_060'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_061'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_064'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_065'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_066'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_068'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_069'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_070'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_071'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_072'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_073'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_074'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_075'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_076'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_077'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_078'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_079'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_080'}
+2026-02-12 13:27:38,785 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_081'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_082'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_083'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_084'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_085'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_086'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_087'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_088'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_089'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_090'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_091'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_092'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_093'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_094'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_095'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_097'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_099'}
+2026-02-12 13:27:38,800 | INFO | ETL | SCD2 SKIP \u2192 No changes detected in customers for {'customer_id': 'CUST_100'}
+2026-02-12 13:27:38,800 | INFO | ETL | Load successful for file: customers.csv
+2026-02-12 13:27:38,987 | INFO | ETL | SUCCESS customers.csv
+2026-02-12 13:27:38,987 | INFO | ETL | PIPELINE SUMMARY | Total: 1 | Processed: 1 | Rejected: 0 | Failed: 0

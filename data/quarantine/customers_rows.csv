@@ -1,0 +1,16 @@
+Address_Line1,Address_Line2,Age,Children,City,Customer_ID,Customer_Type,Email_ID,Employment_Status,First_Name,Gender,Income_Level,Last_Name,Marital_Status,Phone_No,Pincode,State,error_reason
+"07/45,Pillai Road,Kothanur, Hennur, Bagalur Road",nan,23,No,Bangalore,CUST_098,Existing,jacob_natarajan_18@gmail.com,Retired,Jacob,Male,20+L,Natarajan,Divorced,8526388205,560077,Karnataka,Business Rule Failed: retired_age_check
+"14/274,Borde Circle,Chikkabanavara",nan,40,Yes,Bangalore,CUST_067,Existing,hiral_murthy_65@gmail.com,Retired,Hiral,Female,10 - 15L,Murthy,Married,9811111686,560090,Karnataka,Business Rule Failed: retired_age_check
+"181,Ahuja Circle,Doddakallasandra",nan,45,Yes,Bangalore,CUST_002,New,gautami_bawa_67@gmail.com,Retired,Gautami,Female,0 - 2L,Bawa,Married,9079454751,560062,Karnataka,Business Rule Failed: retired_age_check
+"36,Date Path,Thyagarajanagar",nan,25,No,Bangalore,CUST_025,New,sanya_narula_67@gmail.com,Retired,Sanya,Female,0 - 2L,Narula,Single,8205504852,560028,Karnataka,Business Rule Failed: retired_age_check
+"42,Sanghvi Chowk,Gokula Extension",nan,32,Yes,Bangalore,CUST_009,New,charvi_mitter_45@gmail.com,Retired,Charvi,Female,10 - 15L,Mitter,Divorced,9518305322,560054,Karnataka,Business Rule Failed: retired_age_check
+"51/24,Gill,Thyagarajanagar",nan,40,No,Bangalore,CUST_063,New,anthony_shroff_51@gmail.com,Retired,Anthony,Male,0 - 2L,Shroff,Divorced,8118069911,560028,Karnataka,Business Rule Failed: retired_age_check
+"618,Sinha Chowk,Kadugodi",nan,44,No,Bangalore,CUST_062,New,om_balan_98@gmail.com,Retired,Om,Male,20+L,Balan,Single,8694339760,560067,Karnataka,Business Rule Failed: retired_age_check
+"74/48,Shankar Marg,Hebbal Agri. Farm",nan,49,No,Bangalore,CUST_035,Existing,kavya_parikh_25@gmail.com,Retired,Kavya,Female,20+L,Parikh,Single,9059383790,560024,Karnataka,Business Rule Failed: retired_age_check
+"H.No. 235,Jha Road,Yelhanka",nan,41,No,Bangalore,CUST_011,Existing,fitan_rastogi_91@gmail.com,Retired,Fitan,Male,2 - 5L,Rastogi,Married,9976176763,560064,Karnataka,Business Rule Failed: retired_age_check
+"H.No. 28,Nagi,Shanthinagar",nan,30,No,Bangalore,CUST_096,New,qabil_kunda_11@gmail.com,Retired,Qabil,Male,20+L,Kunda,Single,9712725972,560027,Karnataka,Business Rule Failed: retired_age_check
+"H.No. 41,Bora Road,C V Raman Nagar",nan,27,Yes,Bangalore,CUST_033,Existing,anirudh_brahmbhatt_82@gmail.com,Retired,Anirudh,Male,2 - 5L,Brahmbhatt,Single,8931757786,560093,Karnataka,Business Rule Failed: retired_age_check
+"H.No. 43,Sahni Circle,Yelhanka",nan,31,Yes,Bangalore,CUST_003,Existing,riya_sawhney_52@gmail.com,Retired,Riya,Female,0 - 2L,Sawhney,Single,8439861177,560064,Karnataka,Business Rule Failed: retired_age_check
+"H.No. 61,Virk Marg,Jalahalli",nan,43,Yes,Bangalore,CUST_056,New,bhavya_singhal_87@gmail.com,Retired,Bhavya,Female,20+L,Singhal,Divorced,8522207171,560013,Karnataka,Business Rule Failed: retired_age_check
+"H.No. 74,Magar Zila,Maruthisevanagar",nan,24,Yes,Bangalore,CUST_030,New,tanay_nadkarni_62@gmail.com,Retired,Tanay,Male,0 - 2L,Nadkarni,Single,8649896579,560033,Karnataka,Business Rule Failed: retired_age_check
+"H.No. 844,Khalsa Marg,Bangalore University",nan,30,Yes,Bangalore,CUST_023,New,akshay_upadhyay_73@gmail.com,Retired,Akshay,Male,5 - 10L,Upadhyay,Married,9832674289,560056,Karnataka,Business Rule Failed: retired_age_check

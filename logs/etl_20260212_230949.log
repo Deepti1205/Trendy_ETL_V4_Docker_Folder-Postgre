@@ -1,0 +1,14 @@
+2026-02-12 23:09:49,877 | INFO | ETL | Pipeline started | Found 1 files
+2026-02-12 23:09:49,877 | INFO | ETL | START processing file: customers.csv
+2026-02-12 23:09:49,877 | INFO | ETL | Starting validation for file: customers.csv
+2026-02-12 23:09:49,877 | INFO | ETL | Loading validation schema: validation/customers.yaml
+2026-02-12 23:09:49,924 | INFO | ETL | Schema validation completed | Valid rows: 101 | Quarantined rows: 0
+2026-02-12 23:09:49,955 | INFO | ETL | Validation successful for file: customers.csv
+2026-02-12 23:09:49,955 | INFO | ETL | Starting load \u2192 customers.csv \u2192 table: customers
+2026-02-12 23:09:49,955 | INFO | ETL | Loading schema for DB load: validation/customers.yaml
+2026-02-12 23:09:50,893 | INFO | ETL | Ensuring table exists: customers
+2026-02-12 23:09:50,893 | INFO | ETL | SCD2 upsert started for table: customers
+2026-02-12 23:09:50,986 | INFO | ETL | SCD2 SUMMARY : customers | INSERT: 1 | UPDATE: 0 | SKIP: 100
+2026-02-12 23:09:50,986 | INFO | ETL | Load successful for file: customers.csv
+2026-02-12 23:09:51,018 | INFO | ETL | SUCCESS customers.csv
+2026-02-12 23:09:51,018 | INFO | ETL | PIPELINE SUMMARY | Total: 1 | Processed: 1 | Rejected: 0 | Failed: 0
